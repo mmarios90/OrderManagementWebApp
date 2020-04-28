@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML1.0 Transitional//EN" "http://www.w3.org/TR/xhtml xmlns="http:www.w3.org/1999/xhtml" xml:lang="en" lang="eng">
+
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+
+	<title>Connect as Waiter</title>
+	
+		<style type="text/css">
+		
+		form {
+         position: absolute; 
+               top:    300px; 
+               left:   430px; 
+             
+   
+   		 }
+    
+    	</style>
+    	
+    	
+<!--    	<script type="text/javascript">
+
+var ck_username = /^[Α-Ωα-ωά-ώΆ-ΏA-Za-z0-9_]{3,30}$/; //Supports alphabets and numbers no special characters except underscore('_') min 3 and max 30 characters. 
+var ck_password =  /^[Α-Ωα-ωά-ώΆ-ΏA-Za-z0-9!=@#$%^&*()_]{6,25}$/; //Password supports special characters and here min length 6 max 25 charters.
+
+function validate(form){
+	var username = form.usr.value;
+	var password = form.pwd.value;
+	var errors = [];
+	
+ if (!ck_username.test(username)) {
+  errors[errors.length] = "Invalid Username .";
+ }	
+ 
+ if (!ck_password.test(password)) {
+  errors[errors.length] = "You must enter a valid Password ";
+ }
+
+ if (errors.length > 0) {
+  reportErrors(errors);
+  return false;
+ }
+  return true;
+}
+
+function reportErrors(errors){
+  var msg = "Please Enter Valid Data...\n";
+  for (var i = 0; i<errors.length; i++) {
+    var numError = i + 1;
+    msg += "\n" + numError + ". " + errors[i];
+  }
+  alert(msg);
+}
+</script> 
+-->
+
+</head>
+
+<body bgcolor=#00CCFF>
+
+
+	
+	<form action="wlogin.php"method="post">
+
+	<fieldset><legend> Log In </legend>
+
+	<p><b>Username:</b> <input type="text" 
+	name="username" size="30" maxlength="60" /></p>
+
+	
+	<p><b>Password:</b> <input type="password"
+	name="password" size="30" maxlength="60" /></p>
+	
+	</fieldset>
+
+
+	<div align="center"><input type=
+	"submit" name="submit" value=
+	"Connect" /></div>
+	
+	</form>
+	
+
+
+
+
+
+</body>
+</html>
